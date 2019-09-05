@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Josecleudo</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+<body>
+	<div>
+	<div class="menu">
+		<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+			<ul class="navbar-nav">
+				<button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off" onclick="openNav()">☰ Menu</button>
+				<li class="nav-item"><a class="nav-link" data-toggle="pill" href="#">José</a></li>
+				<li class="nav-item"><a class="nav-link" data-toggle="pill" href="#">Maria</a></li>
+				<li class="nav-item"><a class="nav-link" data-toggle="pill" href="#">João</a></li>				
+			</ul>
+		</nav>
+	</div>
+	<div id="meuSidebar" class="sidebar">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+			<a href="#">Sobre</a>
+			<a href="#">Serviços</a>
+			<a href="#">Clientes</a>
+			<a href="#">Contato</a>
+	</div>
+	<div id="main">
+		<h2>Josecleudo's Web Page</h2>
+		<p>Clique no botão de menu para abrir a sidebar lateral</p>
+	</div>
+	</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script>
+	function openNav() {
+		document.getElementById("meuSidebar").style.width = "250px";
+		document.getElementById("main").style.marginLeft = "250px";
+	}
+			
+	function closeNav() {
+		document.getElementById("meuSidebar").style.width = "0";
+		document.getElementById("main").style.marginLeft= "0";
+	}
+</script>
+</body>
+</html>
